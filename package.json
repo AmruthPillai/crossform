@@ -1,0 +1,42 @@
+{
+  "name": "crossform",
+  "description": "A tiny typescript-first utility library to convert JavaScript Objects to FormData, and handle conversions the other way around.",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/crossform.umd.cjs",
+  "module": "./dist/crossform.js",
+  "exports": {
+    ".": {
+      "import": "./dist/crossform.js",
+      "require": "./dist/crossform.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest run",
+    "preview": "vite preview",
+    "build": "tsc && vite build",
+    "format": "prettier --write ./src",
+    "lint": "eslint \"**/*.{ts,tsx}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0",
+    "vite-plugin-dts": "^3.7.2",
+    "vitest": "^1.2.2"
+  }
+}

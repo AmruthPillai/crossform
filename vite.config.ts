@@ -10,9 +10,10 @@ export default defineConfig({
   build: {
     target: 'ESNext',
     lib: {
-      entry: resolve(__dirname, 'lib/main.ts'),
+      entry: resolve(__dirname, 'lib/index.ts'),
       formats: ['es', 'umd'],
-      name: 'crossform'
+      name: 'crossform',
+      fileName: 'crossform'
     },
     rollupOptions: {
       external: [/^node:.*/]

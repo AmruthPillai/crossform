@@ -20,7 +20,7 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      exclude: ['./tests/**/*.ts']
+      exclude: ['./tests/**/*.ts', './vite.config.ts']
     })
   ]
 })

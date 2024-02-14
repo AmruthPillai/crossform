@@ -2,13 +2,14 @@
   "name": "crossform",
   "description": "A tiny typescript-first utility library to convert JavaScript Objects to FormData, and handle conversions the other way around.",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "./dist/crossform.umd.cjs",
   "module": "./dist/crossform.js",
+  "typings": "dist/main.d.ts",
   "exports": {
     ".": {
       "import": "./dist/crossform.js",

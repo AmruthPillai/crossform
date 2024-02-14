@@ -3,6 +3,10 @@ import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
+  test: {
+    globals: false,
+    environment: 'node'
+  },
   build: {
     target: 'ESNext',
     lib: {

@@ -13,7 +13,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'lib/index.ts'),
       formats: ['es', 'umd'],
       name: 'crossform',
-      fileName: 'crossform'
+      fileName: 'index'
     },
     rollupOptions: {
       external: [/^node:.*/]
